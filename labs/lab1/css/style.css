@@ -1,3 +1,45 @@
 #picOfMe {
-    border-radius: 400px;
+    border-radius: 200px;
+    float: left;
+}
+td {
+    border: solid;
+    border-color: yellow;
+}
+footer {
+    width: 300px;
+    margin: 0 auto;
+    color: white;
+    font-size: 1.6em;
+}
+#text {
+    padding-left: 58%;
+}
+#content {
+    width: 800px;
+    margin: 20px  auto 0 auto;
+}
+nav {
+    text-align: center;
+    font-size: 2em;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+}
+body {
+    background: #696969; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#606060, #707070); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#606060, #707070); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#606060, #707070); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#606060, #707070); /* Standard syntax */
 }

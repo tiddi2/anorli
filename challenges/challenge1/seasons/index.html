@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+      body{
+        text-align: center;
+        background-color: black;
+}
+
+      #fall{
+        display: inline-block;
+        Border-radius: 0px 0px 0px 50px;
+      }
+      #winter{  
+        display: inline-block;
+        Border-radius: 0px 0px 50px 0px;
+
+      }
+      #summer{
+        display: inline-block;
+        Border-radius: 0px 50px 0 0;
+
+      }
+      #spring{
+        display: inline-block;
+        Border-radius: 50px 0 0 0;
+
+      }
+      .pic{
+        width: 700px;
+        height: auto;
+      }
+      
+      .pic:hover{
+        width: 750px;
+        height: auto;
+        transition: 2s;
+      }
+      span{
+        font-family: 'Pacifico', cursive;
+        font-size: 1.5em;
+        color: white;
+      }
+      h2{
+        font-family: 'Pacifico', cursive;
+        color:yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The Seasons</h2>
+    
+    <div id = "spring">
+      <img class="pic" id="spring" src="img/spring.png"></img>
+      <br>
+      <span>Spring</span>
+    </div>    
+    <div id = "summer">     
+      <img class="pic" id="summer" src="img/summer.png"></img>
+      <br>
+      <span>Summer</span>
+    </div> 
+    <hr>
+    <div id = "fall">
+      <img class="pic" id="fall" src="img/fall.png"></img>
+      <br>
+      <span>Fall</span>
+    </div>
+    
+    <div id = "winter">
+      <img class="pic" id="winter" src="img/winter.jpg"></img>
+      <br>
+      <span>Winter</span>
+    </div>
+  </body>
+</html>
