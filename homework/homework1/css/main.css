@@ -1,0 +1,63 @@
+#content {
+    width: 800px;
+    margin: 0px  auto 0 auto;
+}
+
+#codePic {
+    margin: 20px 0px 20px 0px;
+}
+#babyOnPC {
+    margin: 0 auto 0 auto;
+    display: block;
+    width: 600px;
+}
+body {
+    color: white;
+}
+nav {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px 0 10px;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+body {
+    background-color: #808080;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.question {
+    display: block;
+}
+.question:hover + .answer {
+    animation: 1.5s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+.answer {
+    visibility: hidden;
+}
+.answer:hover {
+    visibility: visible;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
