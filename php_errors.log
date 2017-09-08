@@ -1,0 +1,4 @@
+[07-Sep-2017 17:27:30 UTC] PHP Parse error:  syntax error, unexpected '")"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/anorli/practice/randomBgColor.php on line 10
+[07-Sep-2017 17:58:02 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/anorli/practice/randomBgColor.php on line 3
+[07-Sep-2017 17:58:28 UTC] PHP Parse error:  syntax error, unexpected '";' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/anorli/practice/randomBgColor.php on line 11
+[07-Sep-2017 18:06:20 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/anorli/practice/randomBgColor.php on line 19
