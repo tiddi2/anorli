@@ -51,10 +51,10 @@
             Player2: Tails <br>";
             echo " <img id='coin' src='img/$coin.png'/> <br>";
             if($coin == 2) {
-                echo "Player1 won";
+                echo "<span id='w4'>Player1 won </span>";
             }
             else {
-                echo "Player2 won";
+                echo "<span id='w4'>Player2 won </span>";
             }
         } else if(getValue($card1) == 1) {
             echoWinner(1);

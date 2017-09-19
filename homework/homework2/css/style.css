@@ -24,6 +24,12 @@ p {
 #w2 {
     color: blue;
 }
+#w3 {
+    color: green;
+}
+#w4 {
+    color: blue;
+}
 #war {
     color: transparent;
     background: -webkit-linear-gradient(#732e37, #2e313f,#c1ad7c, #8a734e, #892627);
