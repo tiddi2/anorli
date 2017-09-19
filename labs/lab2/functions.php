@@ -8,7 +8,8 @@ function calculatePoints($symbols, $result) {
             break;
         }
     }
-    return ($allEqual?(array_search($result[0],$symbols)+1)* 250:0);
+    $points = array(250,500,900,1000);
+    return ($allEqual?$points[array_search($result[0],$symbols)]:0);
 }
 
 function generateRandomSymbols($numOfSymbols,$symbols) {

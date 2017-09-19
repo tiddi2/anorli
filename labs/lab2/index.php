@@ -27,7 +27,7 @@
         else {
             echo "<h3> Try again </h3>";
         }
-        echo "<h4> Total score: ". ($_SESSION["score"]?$_SESSION["score"]:0) . "</br>
+        echo "<h4> Total score: ". ($_SESSION["score"]?$_SESSION["score"]:0) . "</br></br>
         Total tries: " . $_SESSION["tries"] ."</h4>
         </div>";
     ?>

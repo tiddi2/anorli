@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ccc;
+}
+p {
+    font-size: 3em;
+}
+#card1 {
+    width: 15vh;
+}
+#card2 {
+    width: 15vh;
+}
+
+#coin {
+    width: 20vh;
+}
+#w1 {
+    color: green;
+}
+#w2 {
+    color: blue;
+}
+#war {
+    color: transparent;
+    background: -webkit-linear-gradient(#732e37, #2e313f,#c1ad7c, #8a734e, #892627);
+    -webkit-background-clip: text;
+    font-size: 5em;
+}
