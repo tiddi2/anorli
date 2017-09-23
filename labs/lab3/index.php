@@ -61,7 +61,6 @@ function identifyWinner($p1, $p2) {
         <?=identifyWinner($player1Aces,$player2Aces)?>Win: <?=$totalPoints?> points!
     </h1>
     <hr>
-    	&#xa9;2017. Copyright by Miguel Lara
     </main>
     </body>
 </html>
