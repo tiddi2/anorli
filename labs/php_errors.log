@@ -11,3 +11,12 @@
 [21-Sep-2017 18:31:55 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ';' in /home/ubuntu/workspace/anorli/labs/lab4/index.php on line 12
 [21-Sep-2017 18:32:15 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ';' in /home/ubuntu/workspace/anorli/labs/lab4/index.php on line 12
 [21-Sep-2017 18:33:07 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ';' in /home/ubuntu/workspace/anorli/labs/lab4/index.php on line 12
+[21-Sep-2017 18:52:50 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/anorli/labs/lab4/index.php on line 10
+[21-Sep-2017 18:52:50 UTC] PHP Stack trace:
+[21-Sep-2017 18:52:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/labs/lab4/index.php:0
+[21-Sep-2017 19:07:11 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/anorli/labs/lab4/index.php on line 10
+[21-Sep-2017 19:07:11 UTC] PHP Stack trace:
+[21-Sep-2017 19:07:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/labs/lab4/index.php:0
+[21-Sep-2017 22:59:42 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/anorli/labs/lab4/index.php on line 10
+[21-Sep-2017 22:59:42 UTC] PHP Stack trace:
+[21-Sep-2017 22:59:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/labs/lab4/index.php:0

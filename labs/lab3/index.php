@@ -1,121 +1,67 @@
 <?php
-
-/*$deck = array();
-
-for($i=1; $i<53; $i++){
-  $deck[$i] = $i;
-} 
-*/
-
-$deck = range(1,41);
+$deck = range(1,52);
 shuffle($deck);
-//print_r($deck);
 $totalPoints = 0;
-
-function displayHand() {
-    global $deck, $totalPoints;
+$suits = array("clubs","diamonds","hearts","spades");
+function displayHand($preString) {
+    global $deck, $totalPoints, $suits;
     $handPoints = 0;
     $handAces = 0;
-    
+    echo "<div class='hand'> $preString";
     for ($i = 0 ; $i < 5 ; $i++) {
         $lastCard = array_pop($deck);
         $cardValue = $lastCard % 13;
-        $cardSuit;
-        if($lastCard <= 13) {
-            $cardSuit = "clubs";
-        } else if($lastCard > 13 && $lastCard <= 26) {
-            $cardSuit = "diamonds";
-        } else if($lastCard > 26 && $lastCard <= 39) {
-            $cardSuit = "hearts";
-        } else if($lastCard > 39) {
-            $cardSuit = "spades";
-        }
+        $cardSuit = $suits[($lastCard-1)/13];
         if($cardValue == 0) {
             $cardValue = 13;
         }
-        if ($cardValue == 1) { //identifies an ace
+        if ($cardValue == 1) {
             echo "<img class='ace' src='img/cards/$cardSuit/$cardValue.png' alt='Ace' />";
-            $handAces = $handAces + 1;   //another way to do this is using the syntax: $handAces++;
+            $handAces++;
         }
         else {
-            echo "<img src='img/cards/$cardSuit/$cardValue.png' alt='Ace' />";
+            echo "<img src='img/cards/$cardSuit/$cardValue.png' alt='Card' />";
         }
-        // echo $lastCard % 13 . " ";
-        $handPoints = $handPoints + $cardValue;
-        //$handPoints += $cardValue;   shortcut to add value
-        
-        //  echo "<img class='ace' src='img/cards/$cardSuit/$cardValue.png' alt='Ace' />";
-    }//endFor
+        $handPoints+= $cardValue;
+    }
     
     echo " Points: " . $handPoints;
-    
-    echo "  Aces: "  . $handAces;
-    
     $totalPoints = $totalPoints + $handPoints;
-    
+    echo "</div>";
     return $handAces;
-    
 }
 
-
-// function displayRandomCard(){
-//     //$randomCard = rand(1, 13);
-//     $suits = array("clubs","diamonds", "hearts", "spades");
-//     //$randSuit = rand(0,3);
-//     //echo "<img src='img/cards/$suits[$randSuit]/$randomCard.png' alt='Ace' />";
-//     echo "<img src='img/cards/".$suits[rand(0,3)]."/".rand(1, 13).".png' alt='Ace' />";
-// }
-
-// for($i=0; $i<5; $i++){
-//   displayRandomCard(); 
-// }
-
 function identifyWinner($p1, $p2) {
-    //global $player1Aces, $player2Aces;
-    
-     if ( $p1 > $p2) {
-        echo "Player 1 ";
+    if ($p1 > $p2) {
+        echo "You ";
     } else if ($p1 < $p2) {
-        echo "Player 2 ";
+        echo "PC ";
     } else {
         echo "Nobody ";
     }
-    
-    
 }
-
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <title> Lab 3: Ace Poker </title>
-        <style>
-            
-            .ace{
-                border:yellow 2px solid;
-            }
-            
-        </style>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
     </head>
     <body>
-    
+    <main>
     <h1>Ace Poker</h1>
     <h2>Player with more aces wins all points</h2>
     <?php
-    $player1Aces = displayHand();
+        $player1Aces = displayHand("You: ");
+        echo "<br>";
+        $player2Aces = displayHand("PC: ");
     ?>
-    <br>
-    <?php
-    $player2Aces = displayHand();
-    ?>
-    
-    <h2>
-    <?=identifyWinner($player1Aces,$player2Aces)?>
-    
-    Wins:
-    <?=$totalPoints?> points!
-    </h2>
-
+    <h1>
+        <?=identifyWinner($player1Aces,$player2Aces)?>Win: <?=$totalPoints?> points!
+    </h1>
+    <hr>
+    	&#xa9;2017. Copyright by Miguel Lara
+    </main>
     </body>
 </html>
