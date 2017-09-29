@@ -49,3 +49,6 @@
 [28-Sep-2017 18:05:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/labs/lab4/index.php:0
 [28-Sep-2017 18:05:57 UTC] PHP   2. getImageURLs() /home/ubuntu/workspace/anorli/labs/lab4/index.php:16
 [29-Sep-2017 08:22:22 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/anorli/labs/lab4/index.php on line 108
+[29-Sep-2017 08:36:55 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/anorli/labs/lab4/index.php on line 79
+[29-Sep-2017 08:36:55 UTC] PHP Stack trace:
+[29-Sep-2017 08:36:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/labs/lab4/index.php:0
