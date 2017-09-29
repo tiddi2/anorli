@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#imageWrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    justify-content: center;
+
+
+    align-content:flex-start;
+}
+.image {
+    margin: 10px;
+    height: 250px;
+    -webkit-transition: height 1s; /* Safari */
+    transition: height 1s;
+}
+.image:hover {
+    height: 300px;
+   
+}
+header {
+    width: 70%;
+    background-color: limeGreen;
+    padding: 0 15%;
+}
+#searchButton {
+    background-image: url("../img/search.png");
+    width: 50px;
+    height: 50px;
+    background-color: limeGreen;
+    border:none;
+    margin-left: 10px;
+}
+#radioWrapper {
+    display: inline-block;
+    width: 90px;
+}
+#searchBox {
+    
+}

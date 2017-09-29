@@ -1,0 +1,5 @@
+[26-Sep-2017 17:45:39 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/anorli/practice/zodiac/index.php on line 7
+[26-Sep-2017 18:04:28 UTC] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in /home/ubuntu/workspace/anorli/practice/zodiac/index.php on line 3
+[26-Sep-2017 18:19:53 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/anorli/practice/zodiac/index.php on line 23
+[26-Sep-2017 18:19:57 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/anorli/practice/zodiac/index.php on line 23
+[26-Sep-2017 22:07:27 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/anorli/practice/zodiac/index.php on line 8
