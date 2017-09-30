@@ -21,7 +21,7 @@ if (isset($_GET['keyword']) ) {
         <style>
         @import url("css/styles.css");
           body {
-            background-image: url('<?= $backGroundImage ?>');
+            background-image: url('<?php echo (empty($backGroundImage))?"img/sea.jpg":$backGroundImage; ?>');
           }
         </style>
     </head>
