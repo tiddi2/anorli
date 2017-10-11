@@ -1,0 +1,22 @@
+img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+main {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+body {
+    background-color: Chartreuse;
+    color: DarkSlateGrey;
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1;
+}

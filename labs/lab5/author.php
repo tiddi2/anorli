@@ -1,5 +1,4 @@
 <?php
-
 $host = 'localhost'; //cloud 9 database
 $dbname = 'quotes';
 $username = 'root';
@@ -11,23 +10,23 @@ $dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 $dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
-function getRandomQuote() {
+function getAuthorInfo() {
     global $dbConn;
-    $sql = "SELECT quote, q_author.*
-    FROM q_quote 
-    NATURAL JOIN q_author";
+    $sql = "SELECT *
+    FROM q_author
+    WHERE authorId = " .$_GET['authorId'];
     $stmt = $dbConn -> prepare ($sql);
-    
     $stmt -> execute();
-    
-    $records = $stmt -> fetchAll();  //retrieves all records;
-    $randomQuoteID = rand(0,count($records)-1);
-    $randomQuote = $records[$randomQuoteID];
+    $record = $stmt -> fetch();  //retrieves all records;
+    echo "<h3>" . $record["firstName"] . " " . $record["lastName"] . "</h3>";
+    echo ($record["gender"] == "M")?"male":"Female" ;
+    echo "<br>Birth: ".  $record["dob"] . "<br>Death: ";
+    echo $record["dod"] . "<br>";
+    echo $record["profession"] . "<br>";
+    echo $record["country"] . "<br>";
+    echo $record["biography"] . "<br>";
+    echo "<img src='" . $record["picture"]. "' </img>";
 
-    echo $randomQuote['quote'] . "<br />";
-    echo "<a href= 'author.php?authorId=". $randomQuote['authorId'] ."'> " . $randomQuote['firstName'] ." ".
-    $randomQuote['lastName'] . "</a>";
-    
 }
 
 ?>
@@ -40,9 +39,7 @@ function getRandomQuote() {
     </head>
     <body>
     <main>
-        <h2>
-            <?= getRandomQuote() ?>
-        </h2>
+        <?= getAuthorInfo() ?>
     </main>
     </body>
 </html>
