@@ -4,6 +4,7 @@
 <a href="labs/lab2">Lab 2</a> <br>
 <a href="labs/lab3">Lab 3</a> <br>
 <a href="labs/lab4">Lab 4</a> <br>
+<a href="labs/lab5">Lab 5</a> <br>
 
 
 
