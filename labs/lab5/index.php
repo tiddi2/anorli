@@ -1,29 +1,25 @@
 <?php
-
-$host = 'localhost'; //cloud 9 database
-$dbname = 'quotes';
-$username = 'root';
-$password = '';
-//creates database connection
-$dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-
-//we'll be able to see some errors with database
-$dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-
-function getRandomQuote() {
-    global $dbConn;
-    $sql = "SELECT quote, q_author.*
-    FROM q_quote 
-    NATURAL JOIN q_author";
-    $stmt = $dbConn -> prepare ($sql);
+include '../../../dbConnection.php';
+function getRandomQuoteId() {
     
+    $connection = getDBConnection();
+    $sql = "SELECT quoteId FROM q_quote";
+    $stmt = $connection -> prepare ($sql);
+    $stmt -> execute();
+    $records = $stmt -> fetchAll();
+    return array_rand($records);
+}
+
+function getQuoteWithId($id) {
+    $connection = getDBConnection();
+    $sql = "SELECT quote, q_author.*
+    FROM q_quote
+    NATURAL JOIN q_author
+    WHERE quoteId = " . $id;
+    $stmt = $connection -> prepare ($sql);
     $stmt -> execute();
     
-    $records = $stmt -> fetchAll();  //retrieves all records;
-    $randomQuoteID = rand(0,count($records)-1);
-    $randomQuote = $records[$randomQuoteID];
-
+    $randomQuote = $stmt -> fetch();
     echo $randomQuote['quote'] . "<br />";
     echo "<a href= 'author.php?authorId=". $randomQuote['authorId'] ."'> " . $randomQuote['firstName'] ." ".
     $randomQuote['lastName'] . "</a>";
@@ -41,7 +37,7 @@ function getRandomQuote() {
     <body>
     <main>
         <h2>
-            <?= getRandomQuote() ?>
+            <?= getQuoteWithId(getRandomQuoteId()) ?>
         </h2>
     </main>
     </body>

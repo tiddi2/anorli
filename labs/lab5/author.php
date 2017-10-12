@@ -1,21 +1,13 @@
 <?php
-$host = 'localhost'; //cloud 9 database
-$dbname = 'quotes';
-$username = 'root';
-$password = '';
-//creates database connection
-$dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-
-//we'll be able to see some errors with database
-$dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+include '../../../dbConnection.php';
 
 function getAuthorInfo() {
-    global $dbConn;
+    $connection = getDBConnection();
+
     $sql = "SELECT *
     FROM q_author
     WHERE authorId = " .$_GET['authorId'];
-    $stmt = $dbConn -> prepare ($sql);
+    $stmt = $connection -> prepare ($sql);
     $stmt -> execute();
     $record = $stmt -> fetch();  //retrieves all records;
     echo "<h3>" . $record["firstName"] . " " . $record["lastName"] . "</h3>";
