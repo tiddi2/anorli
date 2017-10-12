@@ -1,5 +1,5 @@
 <?php
-include '../../../dbConnection.php';
+include '../../dbConnection.php';
 
 function getAuthorInfo() {
     $connection = getDBConnection();
