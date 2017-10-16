@@ -7,7 +7,7 @@ function getRandomQuoteId() {
     $stmt = $connection -> prepare ($sql);
     $stmt -> execute();
     $records = $stmt -> fetchAll();
-    return array_rand($records);
+    return $records[rand(0,count($records)-1)]["quoteId"];
 }
 
 function getQuoteWithId($id) {
@@ -21,9 +21,9 @@ function getQuoteWithId($id) {
     
     $randomQuote = $stmt -> fetch();
     echo $randomQuote['quote'] . "<br />";
-    echo "<a href= 'author.php?authorId=". $randomQuote['authorId'] ."'> " . $randomQuote['firstName'] ." ".
+    echo "<a target='authorInfo' href= 'author.php?authorId=". $randomQuote['authorId'] ."'> " . $randomQuote['firstName'] ." ".
     $randomQuote['lastName'] . "</a>";
-    
+
 }
 
 ?>
@@ -36,9 +36,9 @@ function getQuoteWithId($id) {
     </head>
     <body>
     <main>
-        <h2>
-            <?= getQuoteWithId(getRandomQuoteId()) ?>
+        <h2><?=getQuoteWithId(getRandomQuoteId())?>
         </h2>
+        <iframe name="authorInfo" width="500" height="600" frameBorder="0"></iframe>
     </main>
     </body>
 </html>

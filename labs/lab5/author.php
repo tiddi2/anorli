@@ -30,8 +30,10 @@ function getAuthorInfo() {
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     <body>
-    <main>
-        <?= getAuthorInfo() ?>
-    </main>
+        <?php
+        if($_GET['authorId']) {
+            getAuthorInfo();
+        }
+        ?>
     </body>
 </html>
