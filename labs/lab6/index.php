@@ -53,7 +53,7 @@ function displayQuotes() {
     }
     $records = executeWithParameter($sql,$namedParameters);
     for($i = 0; $i < count($records);$i++) {
-        echo $records[$i]["quote"] . " " . $records[$i]["firstName"]. " " . $records[$i]["lastName"] . "<br>";
+        echo $records[$i]["quote"] . " <span id ='name' >" . $records[$i]["firstName"]. " " . $records[$i]["lastName"] . "</span> <br>";
     }
 }
 
@@ -98,18 +98,33 @@ function displayQuotes() {
                     <?= getColumn("category","q_category");?>
                 </select>
                  Order by: 
-                 <input type="radio" name="orderBy" id="orderByAuthor" value="orderByAuthor">
+                <input type="radio" name="orderBy" id="orderByAuthor" value="orderByAuthor"
+                
+                <?php
+                if($_GET["orderBy"] == "orderByAuthor") {
+                    echo "checked";
+                }
+                ?>
+                >
                 <label for="orderByAuthor">Author</label>
-                 <input type="radio" name="orderBy" id="orderByQuote" value="orderByQuote">
+                <input type="radio" name="orderBy" id="orderByQuote" value="orderByQuote"
+                <?php
+                if($_GET["orderBy"] == "orderByQuote") {
+                    echo "checked";
+                }
+                ?>
+                >
                 <label for="orderByQuote">Quote</label>
                 <input type="submit" value="Filter" name="submit">
         </form>
-
+        
         <hr />
-
+        <main>
+            
         <div class="quotes">
             <?=displayQuotes()?>
         </div>
+        </main>
         
     </body>
 </html>

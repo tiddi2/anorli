@@ -1,0 +1,21 @@
+main {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: lightGrey;
+    color: DarkSlateGrey;
+    font-size: 1.2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#name {
+    color: purple;
+    font-size: 1.2em;
+}
