@@ -43,8 +43,9 @@ if (isset($_GET['keyword']) ) {
           <option > Forest </option>
           <option > Sky </option>
         </select><br /><br />
-        <input type="submit" value="Submit" />
-      </form>
+        
+             
+        </form>
         
       <?php
         

@@ -18,7 +18,6 @@ function getQuoteWithId($id) {
     WHERE quoteId = " . $id;
     $stmt = $connection -> prepare ($sql);
     $stmt -> execute();
-    
     $randomQuote = $stmt -> fetch();
     echo $randomQuote['quote'] . "<br />";
     echo "<a target='authorInfo' href= 'author.php?authorId=". $randomQuote['authorId'] ."'> " . $randomQuote['firstName'] ." ".
