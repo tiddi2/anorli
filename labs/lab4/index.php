@@ -9,6 +9,7 @@ if (isset($_GET['keyword']) ) {
     $imageURLs = (isset($_GET['layout']))?getImageURLs($keyword, $_GET['layout']):getImageURLs($keyword);
     $backGroundImage = $imageURLs[rand(0,count($imageURLs))];
 }
+
 ?>
 
 <!DOCTYPE html>

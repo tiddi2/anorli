@@ -20,14 +20,26 @@ if (isset($_GET['updateForm'])) { //Admin submitted update form
     $sql = "UPDATE q_author SET 
 	            firstName = :fName,
 	            lastName = :lName,
-	            gender = :gender
+	            gender = :gender,
+	            dob = :dob,
+	            dod = :dod,
+	            profession = :profession,
+	            country = :country,
+	            picture = :picture,
+	            biography = :biography
             WHERE authorId = :authorId";
     
     $namedParameters = array();
+    $namedParameters[':authorId'] = $_GET['authorId'];
     $namedParameters[':fName'] = $_GET['firstName'];
     $namedParameters[':lName'] = $_GET['lastName'];
     $namedParameters[':gender'] = $_GET['gender'];
-    $namedParameters[':authorId'] = $_GET['authorId'];
+    $namedParameters[':dob'] = $_GET['dob'];
+    $namedParameters[':dod'] = $_GET['dob'];
+    $namedParameters[':profession'] = $_GET['profession'];
+    $namedParameters[':country'] = $_GET['country'];
+    $namedParameters[':picture'] = $_GET['picture'];
+    $namedParameters[':biography'] = $_GET['biography'];
     $stmt = $conn->prepare($sql);
     $stmt->execute($namedParameters);
     echo "Record was updated!";

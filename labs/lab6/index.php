@@ -31,16 +31,14 @@ function displayQuotes() {
         $sql = $sql . " AND gender = :gender ";
         $namedParameters[':gender'] = $_GET['gender'];
     }
-    if(!empty($_GET['country'])) {
+    //Fix this
+    
+    if($_GET['country'] != "A") {
         $sql = $sql . " AND country = :country ";
         $namedParameters[':country'] = $_GET['country'];
     }
-    if (!empty($_GET['category'])) {
-        $sql = $sql . " AND q_quote.quoteId in 
-        (SELECT quoteId 
-         FROM q_category natural join q_cat_quote
-         WHERE category = :category
-         )";
+    if ($_GET['category'] != "A") {
+        $sql = $sql . " AND category = :category";
         $namedParameters[':category'] = $_GET['category'];
     }
     
@@ -53,7 +51,7 @@ function displayQuotes() {
     }
     $records = executeWithParameter($sql,$namedParameters);
     for($i = 0; $i < count($records);$i++) {
-        echo $records[$i]["quote"] . " <span id ='name' >" . $records[$i]["firstName"]. " " . $records[$i]["lastName"] . "</span> <br>";
+        echo $records[$i]["quote"] . " " . $records[$i]["firstName"]. " " . $records[$i]["lastName"] . "<br>";
     }
 }
 
@@ -89,42 +87,27 @@ function displayQuotes() {
                 <label for="male">Male</label>
                 <strong>Author's Birthplace:</strong>
                 <select name="country">
-                    <option value="">Select a Country</option>
+                    <option value="A">Select a Country</option>
                     <?= getColumn("country","q_author") ?>
                 </select>
                 <strong>Category:</strong>  
                 <select name="category">
-                    <option value="">Select a Category</option>
+                    <option value="A">Select a Category</option>
                     <?= getColumn("category","q_category");?>
                 </select>
                  Order by: 
-                <input type="radio" name="orderBy" id="orderByAuthor" value="orderByAuthor"
-                
-                <?php
-                if($_GET["orderBy"] == "orderByAuthor") {
-                    echo "checked";
-                }
-                ?>
-                >
+                 <input type="radio" name="orderBy" id="orderByAuthor" value="orderByAuthor">
                 <label for="orderByAuthor">Author</label>
-                <input type="radio" name="orderBy" id="orderByQuote" value="orderByQuote"
-                <?php
-                if($_GET["orderBy"] == "orderByQuote") {
-                    echo "checked";
-                }
-                ?>
-                >
+                 <input type="radio" name="orderBy" id="orderByQuote" value="orderByQuote">
                 <label for="orderByQuote">Quote</label>
                 <input type="submit" value="Filter" name="submit">
         </form>
-        
+
         <hr />
-        <main>
-            
+
         <div class="quotes">
             <?=displayQuotes()?>
         </div>
-        </main>
         
     </body>
 </html>

@@ -18,7 +18,7 @@ $namedParameters[':password'] = $password;
 $record = executeWithParameter($sql,$namedParameters);
 
 if (empty($record)) {
-    echo "Wrong credentials!";  
+    header('location: index.php?loginStatus='); //redirects 
 } else {
     $_SESSION['adminFullName'] = $record[0]['firstName'] . " " . $record[0]['lastName'];
     header('location: admin.php'); //redirects 

@@ -10,6 +10,11 @@
              Password: <input type="password" name="password"/>
             <input type="submit" value="Login!" name="submit">
         </form>
+        <?php
+        if(isset($_GET["loginStatus"])) {
+          echo "Wrong username or password";
+        }
         
+        ?>
     </body>
 </html>
