@@ -26,10 +26,10 @@ function executeWithParameter($sql,$namedParameters) {
     $stmt -> execute($namedParameters);
     return $stmt -> fetchAll(PDO::FETCH_ASSOC);
 }
-function insertWithParameter($sql,$namedParameters) {
+function insertWithParameter($sql,$np) {
     global $dbConnection;
-    $stmt = $dbConnection->prepare($sql);
-    $stmt->execute($namedParameters);
+    $stmt = $dbConnection -> prepare($sql); 
+    $stmt -> execute($np);
 }
 function exe($sql) {
     global $dbConnection;

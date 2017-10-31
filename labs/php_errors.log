@@ -1211,3 +1211,18 @@ Stack trace:
 #2 /home/ubuntu/workspace/anorli/labs/lab6/index.php(112): displayQuotes()
 #3 {main}
   thrown in /home/ubuntu/workspace/anorli/dbConnection.php on line 26
+[31-Oct-2017 18:13:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/anorli/labs/lab7/deleteAuthor.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/labs/lab7/deleteAuthor.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/labs/lab7/deleteAuthor.php on line 8
+[31-Oct-2017 18:14:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/anorli/labs/lab7/deleteAuthor.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/labs/lab7/deleteAuthor.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/labs/lab7/deleteAuthor.php on line 8
+[31-Oct-2017 18:19:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'gender' cannot be null' in /home/ubuntu/workspace/anorli/labs/lab7/addAuthor.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/labs/lab7/addAuthor.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/labs/lab7/addAuthor.php on line 24
