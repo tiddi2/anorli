@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Dosis|Fjalla+One|Open+Sans+Condensed:300');
+
+/* font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Fjalla One', sans-serif; */
+
+/*RESET SHEET*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: helvetica, sans-serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*RESET SHEET*/
+
+/*MAIN PAGE LAYOUT*/
+#guitar-main-container{
+    width: 90%;
+    margin: auto;
+    padding-top: 5em;
+    display: flex;
+}
+
+#hover-guitar-header{
+    
+}
+
+svg{
+    display: flex;
+    width: 5em;
+    top: 0;
+    transition: top ease 0.3s;
+}
+
+#guitar-main-container svg:hover{
+    position: relative;
+    top: -10px;
+}
+
+/*SECCONDARY PAGE FONTS*/
+h1, h2, h3{
+    color: #666;
+}
+
+#bio p{
+    padding-left: 1em;
+}
+
+.secondary-header{
+    padding-left: 1em;
+}
+
+.secondary-header h1{
+    font-family: Anton;
+    font-size: 2em;
+}
+
+.secondary-header h2{
+    font-family: Dosis;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+
+.sidebar-header-light{
+    font-family: Dosis;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+
+.sidebar-header-dark{
+    font-family: Dosis;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+
+.secondary-header h3{
+    font-family: Dosis;
+    padding-bottom: 0.3em;
+}
+
+/*SECONDARY PAGE LAYOUT*/
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+nav svg{
+    width: 4em;
+}
+
+nav a{
+    color: #666;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+#container{
+    display: flex;
+    width: 100%;
+}
+
+#main-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#bio{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#secondary-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+#sidebar-text-box{
+    width: 90%;
+    text-align: center;
+}
+
+/*GUITARS*/
+.fontpage-guitar{
+    
+}
+
+.guitar:hover{
+    /*Move up like 40px animation*/
+}
+
+#black-guitar{
+    
+}
+.black-guitar:hover{
+    /*change color and type in paragraph*/
+}
+
+.grey-guitar{
+    
+}
+.grey-guitar:hover{
+    
+}
+
+.silver-guitar{
+    
+}
+.silver-guitar:hover{
+    
+}
+
+.brown-guitar{
+    
+}
+.brown-guitar:hover{
+    
+}
+
+.red-guitar{
+    
+}
+.red-guitar:hover{
+    
+}
+
+.orange-guitar{
+    
+}
+.orange-guitar:hover{
+    
+}
+
+.gold-guitar{
+    
+}
+.gold-guitar:hover{
+    
+}
+
+.yellow-guitar{
+    
+}
+.yellow-guitar:hover{
+    
+}
+
+.chartreuse-guitar{
+    
+}
+.chartreuse-guitar:hover{
+    
+}
+
+.lime-guitar{
+    
+}
+.lime-guitar:hover{
+    
+}
+
+.green-guitar{
+    
+}
+.green-guitar:hover{
+    
+}
+
+.blue-guitar{
+    
+}
+.blue-guitar:hover{
+    
+}
+
+.indigo-guitar{
+    
+}
+.indigo-guitar:hover{
+    
+}
+
+.purple-guitar{
+    
+}
+.purple-guitar:hover{
+    
+}
+
+.violet-guitar{
+    
+}
+.violet-guitar:hover{
+    
+}
+
+.lavender-guitar{
+    
+}
+.lavender-guitar:hover{
+    
+}
+
+.pink-guitar{
+    
+}
+.pink-guitar:hover{
+    
+}
+
+.magenta-guitar{
+    
+}
+.magenta-guitar:hover{
+    
+}
+
+.white-guitar{
+    
+}
+.white-guitar:hover{
+    
+}
+
+/*SIDEBARS*/
+.sidebar-header-light{
+    color: white;
+}
+
+.sidebar-header-dark{
+    color: #333;
+}
+.sidebar-text-light{
+    color: white;
+}
+
+.sidebar-text-dark{
+    color: #333;
+}
+
+.black-sidebar{
+    background-color: #333;
+}
+.grey-sidebar{
+    background-color: #666;
+}
+.silver-sidebar{
+    background-color: #CCC;
+}
+.brown-sidebar{
+    background-color: #7C583A;
+}
+.red-sidebar{
+    background-color: #C1272D;
+}
+.orange-sidebar{
+    background-color: #EF7726;
+}
+.gold-sidebar{
+    background-color: #D4A14F;
+}
+.yellow-sidebar{
+    background-color: #FFDA00;
+}
+.chartreuse-sidebar{
+    background-color: #D9E021;
+}
+.lime-sidebar{
+    background-color: #8CC63F;
+}
+.green-sidebar{
+    background-color: #009245;
+}
+.blue-sidebar{
+    background-color: #0071BC;
+}
+.indigo-sidebar{
+    background-color: #251463;
+}
+.purple-sidebar{
+    background-color: #6D2791;
+}
+.violet-sidebar{
+    background-color: #735AAF;
+}
+.lavender-sidebar{
+    background-color: #AF9DE0;
+}
+.pink-sidebar{
+    background-color: #FF7BAC;
+}
+.magenta-sidebar{
+    background-color: #D32D71;
+}
+.white-sidebar{
+    background-color: #EDE5D9;
+}

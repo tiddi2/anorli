@@ -46,8 +46,6 @@ if (isset($_GET['updateForm'])) { //Admin submitted update form
 
     
 }
-
-
 if (isset($_GET['authorId'])) {
     $authorInfo = getAuthorInfo();  
 }
@@ -71,13 +69,13 @@ if (isset($_GET['authorId'])) {
                 First Name: <input type="text" name="firstName" value="<?=$authorInfo['firstName']?>" /> <br />
                 Last Name: <input type="text" name="lastName" value="<?=$authorInfo['lastName']?>"/> <br />
                 Gender: <input type="radio" name="gender" value="F" id="genderF"  
-                 <?= ($authorInfo['gender']=="M")?"checked":"" ?>
+                 <?= ($authorInfo['gender']=="F")?"checked":"" ?>
                 />
-                <label for="genderF"></label>Female
+                <label for="genderF">Female</label>
                 <input type="radio" name="gender" value="M" id="genderM"
                 <?= ($authorInfo['gender']=="M")?"checked":"" ?>
                 />
-                <label for="genderF"></label>Male <br />   
+                <label for="genderM">Male</label><br />   
                 Birth Date: <input type="date" name="dob" value="<?=$authorInfo['dob']?>"/><br /> 
                 Death Date: <input type="date" name="dod" value="<?=$authorInfo['dod']?>"/><br /> 
                 Profession: <input type="text" name="profession" value="<?=$authorInfo['profession']?>"/><br /> 

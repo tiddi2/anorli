@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    Number 1:<input type="number" id="n1" /><br> Number 2:<input type="number" id="n2" /> <br>
+    <button id="compare">Compare</button>
+    <p id="output"></p>
+    <script>
+        compare.onclick = compareNumbers;
+
+        function compareNumbers() {
+            if (n1.value > 50 || n2.value > 50 || n1.value < 1 || n2.value < 1) {
+                output.innerHTML = "Error: Number is above 50 or below 1";
+                output.style.color = "red";
+            }
+            else {
+                if (n1.value == n2.value) {
+                    output.innerHTML = "The numbers are equal";
+                }
+                else if (n1.value < n2.value) {
+                    output.innerHTML = n1.value + " is smaller than " + n2.value;
+                }
+                else if (n1.value > n2.value) {
+                    output.innerHTML = n2.value + " is smaller than " + n1.value;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

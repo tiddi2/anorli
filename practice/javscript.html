@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript and juery Practice</title>
+</head>
+
+<body>
+    <h1>Javascript and jQuery</h1>
+    Enter your name <input type="text" id="n" />
+    <button id="displayname">Display name</button>
+    <button id="displaylength">Display Length</button>
+    <p id="text"></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        displayname.onclick = displayName;
+        displaylength.onclick = displayLength;
+
+        function displayName() {
+
+            $("#text").html($("#n").val());
+            //text.innerHTML = n.value;
+        }
+
+        function displayLength() {
+            text.innerHTML = n.value.length;
+        }
+    </script>
+</body>
+
+</html>
