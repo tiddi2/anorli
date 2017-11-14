@@ -1,0 +1,29 @@
+body {
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    text-align: center;
+    font-family: arial;
+}
+
+div {
+    background-color: white;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 30px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#totalScoreReply {
+    font-size: 2.5em;
+}
+
+#submit {
+    font-size: 1.7em;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 10px;
+    padding: 0.3em;
+    color: white;
+}
