@@ -1,0 +1,29 @@
+[14-Nov-2017 05:38:14 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/anorli/homework/homework4/index.php on line 39
+[14-Nov-2017 05:41:06 UTC] PHP Warning:  shuffle() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/anorli/homework/homework4/index.php on line 38
+[14-Nov-2017 05:41:06 UTC] PHP Stack trace:
+[14-Nov-2017 05:41:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework4/index.php:0
+[14-Nov-2017 05:41:06 UTC] PHP   2. shuffle() /home/ubuntu/workspace/anorli/homework/homework4/index.php:38
+[14-Nov-2017 05:41:21 UTC] PHP Warning:  shuffle() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/anorli/homework/homework4/index.php on line 38
+[14-Nov-2017 05:41:21 UTC] PHP Stack trace:
+[14-Nov-2017 05:41:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework4/index.php:0
+[14-Nov-2017 05:41:21 UTC] PHP   2. shuffle() /home/ubuntu/workspace/anorli/homework/homework4/index.php:38
+[14-Nov-2017 05:41:37 UTC] PHP Warning:  shuffle() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/anorli/homework/homework4/index.php on line 38
+[14-Nov-2017 05:41:37 UTC] PHP Stack trace:
+[14-Nov-2017 05:41:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework4/index.php:0
+[14-Nov-2017 05:41:37 UTC] PHP   2. shuffle() /home/ubuntu/workspace/anorli/homework/homework4/index.php:38
+[14-Nov-2017 05:42:14 UTC] PHP Warning:  shuffle() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/anorli/homework/homework4/index.php on line 37
+[14-Nov-2017 05:42:14 UTC] PHP Stack trace:
+[14-Nov-2017 05:42:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework4/index.php:0
+[14-Nov-2017 05:42:14 UTC] PHP   2. shuffle() /home/ubuntu/workspace/anorli/homework/homework4/index.php:37
+[14-Nov-2017 05:43:00 UTC] PHP Warning:  shuffle() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/anorli/homework/homework4/index.php on line 37
+[14-Nov-2017 05:43:00 UTC] PHP Stack trace:
+[14-Nov-2017 05:43:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework4/index.php:0
+[14-Nov-2017 05:43:00 UTC] PHP   2. shuffle() /home/ubuntu/workspace/anorli/homework/homework4/index.php:37
+[14-Nov-2017 05:43:15 UTC] PHP Warning:  shuffle() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/anorli/homework/homework4/index.php on line 37
+[14-Nov-2017 05:43:15 UTC] PHP Stack trace:
+[14-Nov-2017 05:43:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework4/index.php:0
+[14-Nov-2017 05:43:15 UTC] PHP   2. shuffle() /home/ubuntu/workspace/anorli/homework/homework4/index.php:37
+[14-Nov-2017 05:43:46 UTC] PHP Warning:  shuffle() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/anorli/homework/homework4/index.php on line 36
+[14-Nov-2017 05:43:46 UTC] PHP Stack trace:
+[14-Nov-2017 05:43:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework4/index.php:0
+[14-Nov-2017 05:43:46 UTC] PHP   2. shuffle() /home/ubuntu/workspace/anorli/homework/homework4/index.php:36
