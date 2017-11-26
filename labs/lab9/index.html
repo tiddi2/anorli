@@ -49,7 +49,7 @@
     $("#username").change(function() { checkUsername()});
     $("#repassword").change(function() { checkPassword() })
     function checkUsername() {
-        ajaxCall("http://cst352-tidemann.c9users.io/anorli/labs/lab9/checkUsernameAPI.php?",{ "username": $("#username").val()},function(data) {
+        ajaxCall("checkUsernameAPI.php?",{ "username": $("#username").val()},function(data) {
             $("#availabilityImage").attr("src",(data.length == 0?"check":"xmark")+ ".png");
         });
     }
