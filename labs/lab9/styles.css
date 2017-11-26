@@ -1,4 +1,6 @@
-form {
-    width: 80%;
+body {
+    width: 40%;
     margin:auto;
+    background-color: LightGrey;
+    text-align: center;
 }
