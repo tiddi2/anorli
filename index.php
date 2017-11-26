@@ -8,7 +8,7 @@
 <a href="labs/lab6">Lab 6</a> <br>
 <a href="labs/lab7">Lab 7</a> <br>
 <a href="labs/lab8">Lab 8</a> <br>
-
+<a href="labs/lab9">Lab 9</a> <br>
 
 
 <h1>Homework</h1>

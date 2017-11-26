@@ -38,6 +38,13 @@ function exe($sql) {
     return $stmt -> fetchAll(PDO::FETCH_ASSOC);
 }
 
+function executeWithNP($sql,$np) {
+    global $dbConnection;
+    $stmt = $dbConnection -> prepare($sql); 
+    $stmt -> execute($np);
+    return $stmt -> fetchAll(PDO::FETCH_ASSOC);
+}
+
 
 function getDBConnectionWithName($dbName) {
     $host = 'localhost'; //cloud 9 database
