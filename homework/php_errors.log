@@ -27,3 +27,142 @@
 [14-Nov-2017 05:43:46 UTC] PHP Stack trace:
 [14-Nov-2017 05:43:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework4/index.php:0
 [14-Nov-2017 05:43:46 UTC] PHP   2. shuffle() /home/ubuntu/workspace/anorli/homework/homework4/index.php:36
+[30-Nov-2017 04:19:56 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:19:56 UTC] PHP Stack trace:
+[30-Nov-2017 04:19:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 04:35:43 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:35:43 UTC] PHP Stack trace:
+[30-Nov-2017 04:35:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 04:36:51 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:36:51 UTC] PHP Stack trace:
+[30-Nov-2017 04:36:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 04:37:23 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:37:23 UTC] PHP Stack trace:
+[30-Nov-2017 04:37:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 04:38:03 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:38:03 UTC] PHP Stack trace:
+[30-Nov-2017 04:38:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 04:40:05 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:40:05 UTC] PHP Stack trace:
+[30-Nov-2017 04:40:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 04:42:13 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:42:13 UTC] PHP Stack trace:
+[30-Nov-2017 04:42:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 04:43:21 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:43:21 UTC] PHP Stack trace:
+[30-Nov-2017 04:43:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 04:46:00 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:46:00 UTC] PHP Stack trace:
+[30-Nov-2017 04:46:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 04:48:58 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:48:58 UTC] PHP Stack trace:
+[30-Nov-2017 04:48:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 04:49:57 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:49:57 UTC] PHP Stack trace:
+[30-Nov-2017 04:49:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 04:50:03 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 04:50:03 UTC] PHP Stack trace:
+[30-Nov-2017 04:50:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:05:10 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 05:05:10 UTC] PHP Stack trace:
+[30-Nov-2017 05:05:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:05:33 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 05:05:33 UTC] PHP Stack trace:
+[30-Nov-2017 05:05:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:05:47 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 05:05:47 UTC] PHP Stack trace:
+[30-Nov-2017 05:05:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:06:01 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 05:06:01 UTC] PHP Stack trace:
+[30-Nov-2017 05:06:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:06:37 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 05:06:37 UTC] PHP Stack trace:
+[30-Nov-2017 05:06:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:07:01 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 05:07:01 UTC] PHP Stack trace:
+[30-Nov-2017 05:07:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:08:22 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 05:08:22 UTC] PHP Stack trace:
+[30-Nov-2017 05:08:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:10:34 UTC] PHP Warning:  include(../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 2
+[30-Nov-2017 05:10:34 UTC] PHP Stack trace:
+[30-Nov-2017 05:10:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:10:34 UTC] PHP Warning:  include(): Failed opening '../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 2
+[30-Nov-2017 05:10:34 UTC] PHP Stack trace:
+[30-Nov-2017 05:10:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:11:25 UTC] PHP Warning:  include(../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 2
+[30-Nov-2017 05:11:25 UTC] PHP Stack trace:
+[30-Nov-2017 05:11:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:11:25 UTC] PHP Warning:  include(): Failed opening '../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 2
+[30-Nov-2017 05:11:25 UTC] PHP Stack trace:
+[30-Nov-2017 05:11:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:12:46 UTC] PHP Fatal error:  Cannot redeclare getDBConnection() (previously declared in /home/ubuntu/workspace/anorli/dbConnection.php:3) in /home/ubuntu/workspace/anorli/dbConnection.php on line 3
+[30-Nov-2017 05:12:46 UTC] PHP Stack trace:
+[30-Nov-2017 05:12:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:13:51 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 11
+[30-Nov-2017 05:13:51 UTC] PHP Stack trace:
+[30-Nov-2017 05:13:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:16:05 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 11
+[30-Nov-2017 05:16:05 UTC] PHP Stack trace:
+[30-Nov-2017 05:16:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:19:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '1')' at line 1' in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php(13): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 13
+[30-Nov-2017 05:22:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '1')' at line 1' in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php(13): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 13
+[30-Nov-2017 05:23:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '1')' at line 1' in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php(13): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 13
+[30-Nov-2017 05:24:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '1')' at line 1' in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php(13): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 13
+[30-Nov-2017 05:24:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '1')' at line 1' in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 14
+[30-Nov-2017 05:32:01 UTC] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 14
+[30-Nov-2017 05:32:01 UTC] PHP Stack trace:
+[30-Nov-2017 05:32:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:34:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '1')' at line 1' in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php(14): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 14
+[30-Nov-2017 05:35:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '1')' at line 1' in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 16
+[30-Nov-2017 05:36:15 UTC] PHP Warning:  Wrong parameter count for intval() in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 10
+[30-Nov-2017 05:36:15 UTC] PHP Stack trace:
+[30-Nov-2017 05:36:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0
+[30-Nov-2017 05:36:15 UTC] PHP   2. intval() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:10
+[30-Nov-2017 05:36:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,1)' at line 1' in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php(14): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 14
+[30-Nov-2017 05:36:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1,1)' at line 1' in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:11
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php(11): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 11
+[30-Nov-2017 05:53:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/anorli/dbConnection.php:44
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/dbConnection.php(44): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php(18): executeWithNP('SELECT AVG(scor...', Array)
+#2 {main}
+  thrown in /home/ubuntu/workspace/anorli/dbConnection.php on line 44
+[30-Nov-2017 05:56:42 UTC] PHP Fatal error:  Call to undefined function AVG() in /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php on line 19
+[30-Nov-2017 05:56:42 UTC] PHP Stack trace:
+[30-Nov-2017 05:56:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/homework/homework5/quizAPI.php:0

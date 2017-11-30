@@ -1,0 +1,21 @@
+body {
+    background-color: lightgrey;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+img {
+    border-radius: 20px;
+}
+
+#file {
+    display: inline;
+}
+input {
+       border-radius: 15px;
+       color:white;
+       background-color: cornflowerblue;
+}
