@@ -102,15 +102,13 @@ if(!isset($_SESSION["userId"])) {
     }
     //var id = '<?php echo $_SESSION["userId"] ?>';
     totalScoreReply.innerHTML += (totalScore / 6 * 100).toFixed(2) + "%";
-     var data = ajaxCall("quizAPI.php", {"score": totalScore, "insert": "" }, function(data) {});
-    var data = ajaxCall("quizAPI.php", {"getAVG":"" }, function(data) {
+    ajaxCall("quizAPI.php", {"score": totalScore, "insert": "" }, function(data) {});
+    ajaxCall("quizAPI.php", {"getAVG":"" }, function(data) {
         avg.innerHTML = "Average: " + data;
     });
-    var data = ajaxCall("quizAPI.php", {"getCount":"" }, function(data) {
+    ajaxCall("quizAPI.php", {"getCount":"" }, function(data) {
         count.innerHTML = "Total tries: " + data;
     });
-
-getCount
   }
 
   function ajaxCall(link, data, callback) {
