@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    
+}
+
+
+
+#products {
+    max-width: 45%;
+    margin: auto;
+}
+
+#orderBar {
+    float:left;
+    border-style:solid;
+    margin-left:30px;
+    padding-left:30px;
+    display: block;
+    max-width: 45%;
+    margin: auto;
+}
+
+#btnDiv {
+    width:45%;
+    margin: auto;
+}

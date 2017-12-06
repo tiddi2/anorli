@@ -11,6 +11,7 @@ if(isset($_GET["insert"])) {
     $np[":score"]  = intval($_GET['score']);
     $stmt = $conn->prepare($sql);
     $stmt->execute($np);
+    echo json_encode("done") ;
 }
 
 if(isset($_GET["getAVG"])) {

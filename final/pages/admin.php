@@ -44,11 +44,43 @@ function start() {
         <form action="logout.php">
             <input type="submit" value="Logout" />
         </form>
+        <button type="button" id="productPage" >Product page</button> <br>
+
+        <button type="button" id="totalPrice">Total</button>
+        <button type="button" id="averagePrice">Average</button>
 
         <form action="newProduct.php">
             <input type="submit" value="Add New Product" />
         </form>
         <?= start() ?>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script>
+        document.getElementById("totalPrice").onclick = getTotal;
+        document.getElementById("averagePrice").onclick = getAverage;
+        document.getElementById("productPage").onclick = productPage;
+        
+        function productPage() {
+            window.location.replace("../");
+        }
+        function getTotal() {
+            ajaxCall("report.php",{"getTotalPrice": "Total" }, function(data) {console.log(data);});
+        }
+        
+        function getAverage(){
+            ajaxCall("report.php",{"getAVGPrice": "AVG" }, function(data) {console.log(data); });
+        }
+        
+        
+        function ajaxCall(link, data, callback) {
+            $.ajax({
+              type: "GET",
+              url: link,
+              dataType: "json",
+              data: data,
+              success: function(data, status) { callback(data) },
+              complete: function(data, status) { console.log(status) }
+            });
+          }
+        </script>
     </body>
 </html>

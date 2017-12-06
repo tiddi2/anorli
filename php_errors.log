@@ -85,3 +85,24 @@ Stack trace:
 #2 /home/ubuntu/workspace/anorli/final/index.php(80): displayProducts()
 #3 {main}
   thrown in /home/ubuntu/workspace/anorli/final/dbConnection.php on line 25
+[05-Dec-2017 21:25:36 UTC] PHP Warning:  include(pages/dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/anorli/final/search.php on line 3
+[05-Dec-2017 21:25:36 UTC] PHP Stack trace:
+[05-Dec-2017 21:25:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/final/search.php:0
+[05-Dec-2017 21:25:36 UTC] PHP Warning:  include(): Failed opening 'pages/dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/anorli/final/search.php on line 3
+[05-Dec-2017 21:25:36 UTC] PHP Stack trace:
+[05-Dec-2017 21:25:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/final/search.php:0
+[05-Dec-2017 21:25:36 UTC] PHP Fatal error:  Call to undefined function getDBConnection() in /home/ubuntu/workspace/anorli/final/search.php on line 4
+[05-Dec-2017 21:25:36 UTC] PHP Stack trace:
+[05-Dec-2017 21:25:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/final/search.php:0
+[05-Dec-2017 21:26:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/anorli/final/dbConnection.php:36
+Stack trace:
+#0 /home/ubuntu/workspace/anorli/final/dbConnection.php(36): PDOStatement->execute()
+#1 /home/ubuntu/workspace/anorli/final/search.php(33): exe('SELECT * ?     ...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/anorli/final/dbConnection.php on line 36
+[06-Dec-2017 07:19:18 UTC] PHP Fatal error:  Call to undefined function getColumn() in /home/ubuntu/workspace/anorli/final/index.php on line 21
+[06-Dec-2017 07:19:18 UTC] PHP Stack trace:
+[06-Dec-2017 07:19:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/final/index.php:0
+[06-Dec-2017 07:20:31 UTC] PHP Fatal error:  Call to undefined function getColumn() in /home/ubuntu/workspace/anorli/final/index.php on line 22
+[06-Dec-2017 07:20:31 UTC] PHP Stack trace:
+[06-Dec-2017 07:20:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/final/index.php:0
