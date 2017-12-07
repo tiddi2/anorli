@@ -27,7 +27,7 @@ session_start();
             }
             
             input[type=submit] {
-                background-color: #4CAF50;
+                background-color: #696969;
                 color: white;
                 padding: 14px 20px;
                 margin: 8px 0;
