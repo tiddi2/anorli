@@ -106,3 +106,6 @@ Stack trace:
 [06-Dec-2017 07:20:31 UTC] PHP Fatal error:  Call to undefined function getColumn() in /home/ubuntu/workspace/anorli/final/index.php on line 22
 [06-Dec-2017 07:20:31 UTC] PHP Stack trace:
 [06-Dec-2017 07:20:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/final/index.php:0
+[06-Dec-2017 07:54:00 UTC] PHP Parse error:  syntax error, unexpected ',', expecting '&' or variable (T_VARIABLE) in /home/ubuntu/workspace/anorli/final/dbConnection.php on line 55
+[06-Dec-2017 07:54:00 UTC] PHP Stack trace:
+[06-Dec-2017 07:54:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/anorli/final/index.php:0
