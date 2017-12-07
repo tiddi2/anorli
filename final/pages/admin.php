@@ -47,7 +47,7 @@ function start() {
         <form action="logout.php">
             <input type="submit" value="Logout" />
         </form>
-        <form action="../">
+        <form action="../index.php">
             <input type="submit" value="productPage" />
         </form>
         <button type="button" id="totalPrice">Total</button>

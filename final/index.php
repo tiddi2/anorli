@@ -1,5 +1,6 @@
 <?php
-include "dbConnection.php"
+    session_start();
+    include "dbConnection.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,29 +9,56 @@ include "dbConnection.php"
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     </head>
     <body>
-    <h1>Products</h1>
-    <a href="pages/adminLogin.php">Login as admin</a>
+    <a id="adminLogin" href="pages/adminLogin.php">Login as admin</a>
+    <h1>Insert some title or something</h1>
+    
     <hr/>
     <div id="orderBar">
-        <strong>Product Name:</strong>
+        <div id="asideLeft">
+            <strong>Product Name:</strong> <br>
+            <strong>Category:</strong> <br>
+            <strong>Order by:</strong>
+        </div>
+        <div id="asideRight">
+            <!--<strong>Product Name:</strong>-->
         <input type="text" id="nameIncludes" name="nameIncludes" value=<?= $_GET["nameIncludes"]?>>
         <br>
-        <strong>Category:</strong>  
+        <!--<strong>Category:</strong>  -->
         <select id="category" name="category">
             <option value="">Select a Category</option>
             <?=  getColumn("categoryName","categories"); ""; ?>
-        </select>
-        <br>
-        <strong>Order by:</strong>
-        <input type="radio" name="orderBy" id="orderByPriceLow" value="orderByPriceLow">
-        <label for="orderByPriceLow">Price: Low->High</label>
-        <input type="radio" name="orderBy" id="orderByPriceHigh" value="orderByPriceHigh">
-        <label for="orderByPriceHigh">Price: High->Low</label>
-        <br>
-        <input type="radio" name="orderBy" id="orderByNameAsc" value="orderByNameAsc">
-        <label for="orderByNameAsc">Name A-Z</label>
-        <input type="radio" name="orderBy" id="orderByNameDesc" value="orderByNameDesc">
-        <label for="orderByNameDesc">Name Z-A</label>
+            </select>
+            <br>
+            <!--<strong>Order by:</strong>-->
+            <input type="radio" name="orderBy" id="orderByPriceLow" value="orderByPriceLow">
+            <label for="orderByPriceLow">Price: Low->High</label>
+            <input type="radio" name="orderBy" id="orderByPriceHigh" value="orderByPriceHigh">
+            <label for="orderByPriceHigh">Price: High->Low</label>
+            <br>
+            <input type="radio" name="orderBy" id="orderByNameAsc" value="orderByNameAsc">
+            <label for="orderByNameAsc">Name A-Z</label>
+            <input type="radio" name="orderBy" id="orderByNameDesc" value="orderByNameDesc">
+            <label for="orderByNameDesc">Name Z-A</label>
+        </div>
+        <!--<strong>Product Name:</strong>-->
+        <!--<input type="text" id="nameIncludes" name="nameIncludes" value=<?= $_GET["nameIncludes"]?>>-->
+        <!--<br>-->
+        <!--<strong>Category:</strong>  -->
+        <!--<select id="category" name="category">-->
+        <!--    <option value="">Select a Category</option>-->
+        <!--    <?=  getColumn("categoryName","categories"); ""; ?>-->
+        <!--</select>-->
+        <!--<br>-->
+        <!--<strong>Order by:</strong>-->
+        <!--<input type="radio" name="orderBy" id="orderByPriceLow" value="orderByPriceLow">-->
+        <!--<label for="orderByPriceLow">Price: Low->High</label>-->
+        <!--<input type="radio" name="orderBy" id="orderByPriceHigh" value="orderByPriceHigh">-->
+        <!--<label for="orderByPriceHigh">Price: High->Low</label>-->
+        <!--<br>-->
+        <!--<input type="radio" name="orderBy" id="orderByNameAsc" value="orderByNameAsc">-->
+        <!--<label for="orderByNameAsc">Name A-Z</label>-->
+        <!--<input type="radio" name="orderBy" id="orderByNameDesc" value="orderByNameDesc">-->
+        <!--<label for="orderByNameDesc">Name Z-A</label>-->
     </div>
     <div id="products">
         <table class="table table-striped">
